@@ -1,0 +1,14 @@
+<h1>Welcome to fogpalace.com</h1>
+
+We have many sights to show you
+
+<ul>
+  {{#each model as |item|}}
+    {{item-tile item=item destroyItem="destroyItem"}}
+  {{/each}}
+</ul>
+
+{{new-item saveItem="saveItem"}}
+
+{{#link-to 'about'}}About Fog Palace{{/link-to}}
+{{#link-to 'contact'}}Contact Fog Palace{{/link-to}}
