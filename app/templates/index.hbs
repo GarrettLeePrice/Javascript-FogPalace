@@ -1,14 +1,29 @@
-<h1>Welcome to fogpalace.com</h1>
+<div class="jumbotron">
+  <h1>Welcome to fogpalace.com</h1>
+</div>
 
-We have many sights to show you
 
-<ul>
-  {{#each model as |item|}}
-    {{item-tile item=item destroyItem="destroyItem"}}
-  {{/each}}
-</ul>
+<div class="container">
+  <div class="heading">
+    <h2>Fog Palace limited edition cassette tapes and tshirts</h2>
+  </div>
+<div class="row">
 
-{{new-item saveItem="saveItem"}}
 
-{{#link-to 'about'}}About Fog Palace{{/link-to}}
-{{#link-to 'contact'}}Contact Fog Palace{{/link-to}}
+
+    {{#each model as |item|}}
+
+        {{item-tile item=item destroyItem="destroyItem"}}
+  
+    {{/each}}
+
+
+
+
+</div>
+
+  {{new-item saveItem="saveItem"}}
+
+  {{#link-to 'about'}}About Fog Palace{{/link-to}}
+  {{#link-to 'contact'}}Contact Fog Palace{{/link-to}}
+</div>

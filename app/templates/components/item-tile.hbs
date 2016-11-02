@@ -1,3 +1,9 @@
-<li>{{item.name}} {{item.type}} {{item.price}}
-<button {{action 'delete' item}}>Deelete Item</button>
-</li>
+
+  <div class="col-md-4">
+    <p><img src="{{item.image}}" alt="Item for sale"/></p> <h4>{{item.name}}</h4> <p>{{item.type}}</p> <p>{{item.price}}</p>
+    <br>
+    <button {{action 'delete' item}}>Delete Item</button>
+    <br>
+
+
+</div>
