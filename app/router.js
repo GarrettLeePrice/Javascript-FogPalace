@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('contact');
   this.route('my-cart');
   this.route('admin');
+  this.route('item', {path: '/item/:item_id'});
 });
 
 export default Router;

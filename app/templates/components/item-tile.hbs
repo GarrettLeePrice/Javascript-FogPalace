@@ -1,6 +1,6 @@
 <p><img src="{{item.image}}" alt="Item for sale"/></p>
 <div class="titleAndButton">
-  <h4>{{item.name}}</h4>
+  {{#link-to 'item' item.id}}<h4>{{item.name}}</h4>{{/link-to}}
   <p>{{item.type}}</p> <p>$ {{item.price}}</p>
-  <button {{action 'addToCart' item}}>Add to Cart</button>
+  <button id="addToCartButton"{{action 'addToCart' item}}>Add to Cart</button>
 </div>
