@@ -1,22 +1,17 @@
 <div class="jumbotron">
-  <h1>Welcome to fogpalace.com</h1>
+  <h1>fogpalace.com</h1>
+  <div class="heading">
+    <h2>Fog Palace limited edition cassette tapes and clothing</h2>
+  </div>
 </div>
 
 
 <div class="container">
-  <div class="heading">
-    <h2>Fog Palace limited edition cassette tapes and clothing</h2>
-  </div>
+
   {{#each model as |item|}}
     {{item-tile item=item}}
   {{/each}}
   <div class="cartButton">
     <button {{action 'goToCart' item}}>Shopping Cart</button>
   </div>
-
-  <div class="bottomLinks">
-    {{#link-to 'about'}}About Fog Palace{{/link-to}}
-    {{#link-to 'contact'}}Contact Fog Palace{{/link-to}}
-  </div>
-
 </div>

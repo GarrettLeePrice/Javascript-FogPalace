@@ -2,5 +2,7 @@
   {{#each shoppingCart.items as |item|}}
     <li><h4>{{item.name}} -- {{item.price}}</h4></li>
   {{/each}}
-  {{shoppingCart.total}}
+<div class="cartTotal">
+  <h3>total: ${{shoppingCart.total}}</h3>
+</div>
 </ul>

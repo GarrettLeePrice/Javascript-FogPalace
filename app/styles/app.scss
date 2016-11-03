@@ -1,3 +1,7 @@
+body {
+
+}
+
 img {
   width:50%;
   display: block;
@@ -8,6 +12,12 @@ button {
   margin-top: 5px;
   margin-bottom: 20px;
 
+}
+
+.cartTotal {
+  h3 {
+    color: red;
+  }
 }
 
 .form-group {
@@ -31,6 +41,14 @@ button {
 
 .newItemButton {
 text-align: center;
+margin-left: 5px;
+  button {
+    width:100px;
+    height:50px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+  }
 
 
 }
@@ -48,6 +66,14 @@ text-align: center;
 
 .deleteButton {
   text-align: center;
+  button {
+    width:100px;
+    height:50px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+
+  }
 }
 
 .cartButton {
@@ -63,6 +89,7 @@ text-align: center;
 }
 
 .jumbotron {
+
   text-align: center;
   h1{
     color: red;
