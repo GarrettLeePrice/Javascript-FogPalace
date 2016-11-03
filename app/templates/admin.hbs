@@ -1,5 +1,10 @@
 
 {{#each model as |item|}}
   {{admin-item-tile item=item}}
-  <button {{action 'delete' item}}>Delete Item</button>
+  <div class="deleteButton">
+    <button {{action 'delete' item}}>Delete !!</button>
+  </div>
 {{/each}}
+<div class="newItemButton">
+  {{new-item saveItem="saveItem"}}
+</div>

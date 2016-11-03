@@ -5,11 +5,48 @@ img {
 }
 
 button {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
+
 }
 
+.form-group {
+  text-align: center;
+}
+
+.form-control {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.newItemForm {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  background-color: silver;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.newItemButton {
+text-align: center;
+
+
+}
+
+.saveButton {
+text-align: center;
+}
+
+
+
+
 .bottomLinks {
+  text-align: center;
+}
+
+.deleteButton {
   text-align: center;
 }
 
