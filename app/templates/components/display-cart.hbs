@@ -1,3 +1,5 @@
-{{#each shoppingCart.items as |item|}}
-  {{item.name}} -- {{item.price}}
-{{/each}}
+<ul>
+  {{#each shoppingCart.items as |item|}}
+    <li><h4>{{item.name}} -- {{item.price}}</h4></li>
+  {{/each}}
+</ul>

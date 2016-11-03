@@ -1,5 +1,28 @@
 img {
   width:50%;
+  display: block;
+  margin: auto;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottomLinks {
+  text-align: center;
+}
+
+.cartButton {
+  text-align: center;
+  font-size: 20pt;
+  button {
+    width:200px;
+    height:100px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+  }
 }
 
 .jumbotron {
@@ -10,9 +33,10 @@ img {
     font-size: 80pt;
   }
 }
-.col-md-4 {
-  padding-bottom: 50px;
+.titleAndButton {
+text-align: center;
 }
+
 
 .navbar {
   margin-bottom: -20px;

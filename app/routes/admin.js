@@ -1,27 +1,21 @@
 import Ember from 'ember';
 
-
-
 export default Ember.Route.extend({
   model() {
     return this.store.findAll('item');
   },
 
   actions: {
-
-    goToCart() {
-      this.transitionTo('my-cart');
-    },
-
     saveItem(params) {
       var newItem = this.store.createRecord('item', params);
       newItem.save();
-      this.transitionTo('index');
+      this.transitionTo('admin');
     },
-
-    destroyItem(item) {
-      item.destroyRecord();
-      this.transitionTo('index');
+      delete(item) {
+        if (confirm('really?')) {
+          item.destroyRecord();
+          this.transitionTo('admin');
+        }
+      }
     }
-  }
 });

@@ -5,26 +5,18 @@
 
 <div class="container">
   <div class="heading">
-    <h2>Fog Palace limited edition cassette tapes and tshirts</h2>
+    <h2>Fog Palace limited edition cassette tapes and clothing</h2>
   </div>
-<div class="row">
+  {{#each model as |item|}}
+    {{item-tile item=item}}
+  {{/each}}
+  <div class="cartButton">
+    <button {{action 'goToCart' item}}>Shopping Cart</button>
+  </div>
 
+  <div class="bottomLinks">
+    {{#link-to 'about'}}About Fog Palace{{/link-to}}
+    {{#link-to 'contact'}}Contact Fog Palace{{/link-to}}
+  </div>
 
-
-    {{#each model as |item|}}
-
-        {{item-tile item=item destroyItem="destroyItem"}}
-
-    {{/each}}
-
-
-    {{display-cart item=item}}
-
-
-</div>
-
-  {{new-item saveItem="saveItem"}}
-
-  {{#link-to 'about'}}About Fog Palace{{/link-to}}
-  {{#link-to 'contact'}}Contact Fog Palace{{/link-to}}
 </div>

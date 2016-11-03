@@ -1,10 +1,9 @@
 
-  <div class="col-md-4">
-    <p><img src="{{item.image}}" alt="Item for sale"/></p> <h4>{{item.name}}</h4> <p>{{item.type}}</p> <p>{{item.price}}</p>
-    <br>
-    <button {{action 'delete' item}}>Delete Item</button>
-    <br>
-    <button {{action 'addToCart' item}}>Add to Cart</button>
 
 
-</div>
+    <p><img src="{{item.image}}" alt="Item for sale"/></p>
+    <div class="titleAndButton">
+      <h4>{{item.name}}</h4>
+      <p>{{item.type}}</p> <p>{{item.price}}</p>
+      <button {{action 'addToCart' item}}>Add to Cart</button>
+    </div>
